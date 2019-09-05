@@ -34,14 +34,7 @@ function Header({ siteTitle }) {
           className={`${
             isExpanded ? `block` : `hidden`
           } md:block md:flex md:items-center w-full md:w-auto px-4 bg-gray-100 md:bg-transparent py-2`}
-        >
-          <Link
-            to="/"
-            className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-gray-600 uppercase text-sm font-medium tracking-widest"
-          >
-            Play
-          </Link>
-        </div>
+        ></div>
       </div>
     </nav>
   );

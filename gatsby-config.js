@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Tailwind`,
-    description: `Gatsby starter styled with Tailwind`,
-    author: `@taylorbryant`
+    title: `Tic tac toe, using minimax`,
+    description: `Tic tac toe against an AI agent implemented with minimax algorithm`,
+    author: `@a01700651`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

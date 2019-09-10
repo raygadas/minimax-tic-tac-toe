@@ -106,6 +106,7 @@ const GameAgent = ({ children }) => {
         getAvailableMoves(boardState) &&
         getAvailableMoves(boardState).length
       ) {
+        console.log(getAvailableMoves(boardState));
         var bestIndex = getBestMoveIndex();
         makeMove(bestIndex);
       }

@@ -24,12 +24,22 @@ const GameAgent = ({ children }) => {
       const winner = isTerminal(currentBoardState).winner;
       // User wins
       if (winner === "X") {
+        console.log("Final State: X wins");
+        console.log("Depth", depth);
+        console.log("Board state", currentBoardState, "\n");
         return -100 + depth;
       }
       // Agent wins
       if (winner === "O") {
+        console.log("Final State: O wins");
+        console.log("Depth", depth);
+        console.log("Board state", currentBoardState, "\n");
         return 100 - depth;
       }
+
+      console.log("Final State: draw", currentBoardState);
+      console.log("Depth", depth);
+      console.log("Board state", currentBoardState, "\n");
       // Draw
       return 0;
     }
@@ -106,7 +116,6 @@ const GameAgent = ({ children }) => {
         getAvailableMoves(boardState) &&
         getAvailableMoves(boardState).length
       ) {
-        console.log(getAvailableMoves(boardState));
         var bestIndex = getBestMoveIndex();
         makeMove(bestIndex);
       }
